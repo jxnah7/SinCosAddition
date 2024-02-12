@@ -44,7 +44,7 @@ int main()
 	
 	// Declares variables alpha,beta,sina,cosb, and total that hold double precision real numbers
 	
-    double alpha, beta, sina, cosb, total;
+   	double alpha, beta, sina, cosb, total;
     
 	// Prompts the user to "Please enter your full name: "
 	
@@ -52,7 +52,7 @@ int main()
 	
 	// Reads the full name from keyboard and stores it in the corresponding variable
 	
-	cin >> name;
+	getline(cin , name);
 	
 	// Prompts the user to "Please enter angle alpha: "
 	
@@ -64,7 +64,7 @@ int main()
 	
 	// Prompts the user to "Please enter angle beta: "
 	
-    cout << endl << "Please enter angle beta: ";
+  	cout << endl << "Please enter angle beta: ";
     
 	// Reads the value from the keyboard and stores it in the corresponding variable
 	
@@ -76,12 +76,12 @@ int main()
 	
 	// Calculates the sine of alpha and the cosine of beta, and stores the results in the corresponding variables
 	
-    sina = sin(alpha * PI / 180);
-    cosb = cos(beta * PI / 180);
+    	sina = sin(alpha * PI / 180);
+   	cosb = cos(beta * PI / 180);
     
 	// Calculates the total as the addition of the sine and the cosine and stores it in the corresponding variable
 	
-    total = sina + cosb;
+    	total = sina + cosb;
     
 	// Formats the output to display the values in fixed format with three decimal digits
 	
@@ -90,19 +90,19 @@ int main()
 	// Prints a message like the one below:
 	// Using 23 columns displays "sine of alpha: ", using 6 columns displays sina
 	
-	cout << "\t" << setw(23) << "sine of alpha: " << setw(6) << sina;
+	cout << endl << "\t" << setw(23) << "sine of alpha: " << setw(6) << sina;
 	
 	// Using 23 columns displays "+ cosine of beta: " , using 6 columns displays cosb
 	
-	cout << "\t" << setw(23) << "+ cosine of beta: " << setw(6) << cosb;
+	cout << endl << "\t" << setw(23) << "+ cosine of beta: " << setw(6) << cosb;
 	
 	// Using 30 columns displays "-------"
 	
-	cout << setw(30) << "-------";
+	cout << endl << setw(30) << "-------";
 	
 	// Using 23 columns displays "total: ",  using 6 columns displays total
 	
-	cout << setw(23) << "total: " << setw(6) << total;
+	cout << endl << setw(23) << "total: " << setw(6) << total << endl;
 	
 	// Do NOT remove or modify the following statements
 	cout << endl << "Testing your solution" << endl << endl;
